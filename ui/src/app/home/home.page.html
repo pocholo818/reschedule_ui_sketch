@@ -1,8 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Reschedule
     </ion-title>
+
+    <ion-buttons slot="end">
+        <ion-button color="success" [routerLink]="['/add']">
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </ion-button>
+
+      <!-- <ion-button>
+        <ion-icon name="trash-outline"></ion-icon>
+      </ion-button> -->
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +23,32 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> <ion-chip><ion-label color="danger"><ion-icon name="trash-outline"></ion-icon></ion-label> </ion-chip> Schedule Test</ion-card-title>
+      <ion-card-subtitle>04/12/2022</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Must clean my room. After cleaning, do a quick walk outside and then take a nap.
+      Lastly, do my activities so that I can play afterwards hehe.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title><ion-checkbox></ion-checkbox> Foxy Jumpy</ion-card-title>
+      <ion-card-subtitle>04/20/2022</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      The quick brown fox jumps over the lazy dog.
+    </ion-card-content>
+  </ion-card>
+  
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </div> -->
+
 </ion-content>

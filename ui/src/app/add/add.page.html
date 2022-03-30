@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Add Schedule</ion-title>
+  <ion-toolbar color="danger">
+    <ion-title >Add Schedule</ion-title>
 
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
@@ -19,7 +19,9 @@
     <ion-textarea placeholder="Description here"></ion-textarea>
   </ion-item>
 
-  <ion-datetime size="full"></ion-datetime>
-
-  <ion-button expand="block">Add Schedule</ion-button>
+  <ion-datetime color="danger" size="full"></ion-datetime>
 </ion-content>
+
+<ion-footer translucent="true" class="ion-no-border ion-padding">
+  <ion-button color="danger" size="block">Add Schedule</ion-button>
+</ion-footer>
